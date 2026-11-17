@@ -1,5 +1,7 @@
 # AI Architects · Project 8: All topics (checkpoint)
 
+**See it working:** [https://hecsh.github.io/ai-architects-p8-all-topics/](https://hecsh.github.io/ai-architects-p8-all-topics/). This example site replays real answers recorded from the judges, so you can try the examples without a key. It lives in the `docs` folder; you do not need to change it.
+
 Finished state of Projects 5 to 8. Four things are working here:
 
 - **A panel of three judges and a verdict**, from Project 6.

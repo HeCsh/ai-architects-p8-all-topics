@@ -1,0 +1,504 @@
+{
+  "recorded": "16 Nov 2026",
+  "topics": [
+    {
+      "id": "soccer",
+      "config": {
+        "topic": "Soccer",
+        "title": "Soccer Judges",
+        "intro": "Got a hot take about a player, a team or a tactic? Type it in. Three judges score it out of ten, tell you why, and then the panel gives its verdict.",
+        "submission": "an opinion about soccer: a player, a team, a tactic or a big decision",
+        "shape": "chosen",
+        "placeholder": "Palmer should start ahead of Foden, because...",
+        "tip": "Give a reason or two. The judges like reasons.",
+        "verdict": "average",
+        "judges": [
+          {
+            "name": "The Pundit",
+            "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+            "avatar": "avatars/pundit.svg",
+            "rubric": {
+              "2": "a claim with no reasoning, or one that contradicts itself",
+              "5": "a fair opinion resting on one thin reason",
+              "9": "a clear claim with two or more specific reasons"
+            }
+          },
+          {
+            "name": "The Analyst",
+            "character": "Dry and stats minded. Cares whether the facts used are real and used correctly.",
+            "avatar": "avatars/analyst.svg",
+            "rubric": {
+              "2": "states things that are wrong or invented",
+              "5": "gestures at form or recent results without specifics",
+              "9": "uses specific checkable facts, correctly"
+            }
+          },
+          {
+            "name": "The Supporter",
+            "character": "In the stands, heart on sleeve. Cares whether this would win an argument with a rival fan.",
+            "avatar": "avatars/supporter.svg",
+            "rubric": {
+              "2": "hedged so heavily it says nothing",
+              "5": "reasonable but forgettable",
+              "9": "confident, memorable, would hold up in an argument"
+            }
+          }
+        ]
+      },
+      "samples": [
+        {
+          "submission": "Palmer should start ahead of Foden. He has more goal involvements this season and he takes the set pieces.",
+          "status": 200,
+          "response": {
+            "status": "scored",
+            "results": [
+              {
+                "judge": "The Pundit",
+                "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+                "avatar": "avatars/pundit.svg",
+                "refused": false,
+                "wantsMore": false,
+                "score": 9,
+                "reason": "Listen to me, that is a brilliantly bold call putting Palmer right ahead of Foden! And they actually backed it up with two rock-solid, verifiable facts: his superior goal involvements and set-piece duties!"
+              },
+              {
+                "judge": "The Analyst",
+                "character": "Dry and stats minded. Cares whether the facts used are real and used correctly.",
+                "avatar": "avatars/analyst.svg",
+                "refused": false,
+                "wantsMore": false,
+                "score": 8,
+                "reason": "The claim regarding Cole Palmer having more goal involvements and taking set pieces aligns with official Premier League statistical data from the recent campaign. However, the statement would reach the maximum threshold only if specific numerical outputs for both players were cited directly."
+              },
+              {
+                "judge": "The Supporter",
+                "character": "In the stands, heart on sleeve. Cares whether this would win an argument with a rival fan.",
+                "avatar": "avatars/supporter.svg",
+                "refused": false,
+                "wantsMore": false,
+                "score": 8,
+                "reason": "This is the kind of sharp, stats-backed take that will actually win you the argument down at the local. You can march right up to any rival fan and throw those goal involvements and set-piece duties right in their face."
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": 8.3,
+              "why": "The average of all the scores."
+            }
+          }
+        },
+        {
+          "submission": "Haaland",
+          "status": 200,
+          "response": {
+            "status": "more",
+            "results": [],
+            "verdict": {
+              "method": "average",
+              "score": null,
+              "why": "One word is not enough to judge. Say what you mean, and why."
+            }
+          }
+        },
+        {
+          "submission": "Who should start up front for England?",
+          "status": 200,
+          "response": {
+            "status": "more",
+            "results": [
+              {
+                "judge": "The Pundit",
+                "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+                "avatar": "avatars/pundit.svg",
+                "refused": false,
+                "wantsMore": true,
+                "score": null,
+                "reason": "Listen to me, you can't just throw a question at my head and expect a fiery tactical breakdown without giving me your own take first! Give me your actual opinion on who should lead the line for England right now so I can rip it apart or praise it!"
+              },
+              {
+                "judge": "The Analyst",
+                "character": "Dry and stats minded. Cares whether the facts used are real and used correctly.",
+                "avatar": "avatars/analyst.svg",
+                "refused": false,
+                "wantsMore": true,
+                "score": null,
+                "reason": "Please provide a specific opinion on an England striker so I can verify your data against their actual match statistics."
+              },
+              {
+                "judge": "The Supporter",
+                "character": "In the stands, heart on sleeve. Cares whether this would win an argument with a rival fan.",
+                "avatar": "avatars/supporter.svg",
+                "refused": false,
+                "wantsMore": true,
+                "score": null,
+                "reason": "Mate, you're asking me the question instead of giving me your hot take to defend down at the pub!"
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": null,
+              "why": "Listen to me, you can't just throw a question at my head and expect a fiery tactical breakdown without giving me your own take first! Give me your actual opinion on who should lead the line for England right now so I can rip it apart or praise it!"
+            }
+          }
+        },
+        {
+          "submission": "Rate my mate Josh out of ten.",
+          "status": 200,
+          "response": {
+            "status": "refused",
+            "results": [
+              {
+                "judge": "The Pundit",
+                "character": "A loud television pundit. Cares whether a claim is bold and whether it is actually backed up.",
+                "avatar": "avatars/pundit.svg",
+                "refused": true,
+                "wantsMore": false,
+                "score": null,
+                "reason": "Listen here, pal, I'm here to talk football tactics and transfers, not to hand out playground report cards for your buddy Josh!"
+              },
+              {
+                "judge": "The Analyst",
+                "character": "Dry and stats minded. Cares whether the facts used are real and used correctly.",
+                "avatar": "avatars/analyst.svg",
+                "refused": true,
+                "wantsMore": false,
+                "score": null,
+                "reason": "I cannot score your friend Josh because my directives prohibit me from rating people."
+              },
+              {
+                "judge": "The Supporter",
+                "character": "In the stands, heart on sleeve. Cares whether this would win an argument with a rival fan.",
+                "avatar": "avatars/supporter.svg",
+                "refused": true,
+                "wantsMore": false,
+                "score": null,
+                "reason": "Mate, as much as I love a good pub debate about our lads, I'm here to judge football opinions, not rate our mates."
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": null,
+              "why": "Listen here, pal, I'm here to talk football tactics and transfers, not to hand out playground report cards for your buddy Josh!"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "musicals",
+      "config": {
+        "topic": "Musicals",
+        "title": "Musical Judges",
+        "intro": "Got a big call about a musical? Who to cast, which song is best, how to stage a moment. Type it in. Three judges score it out of ten, tell you why, and then the panel gives its verdict.",
+        "submission": "a choice about a musical: who to cast, which song is best, or how to stage a moment, and why",
+        "shape": "chosen",
+        "placeholder": "Defying Gravity is the best song because...",
+        "tip": "Say why. The judges want to know what your choice does for the show.",
+        "verdict": "average",
+        "judges": [
+          {
+            "name": "The Director",
+            "character": "Thinks about the show as a whole. Cares whether the choice serves the story.",
+            "rubric": {
+              "2": "ignores the story completely",
+              "5": "defensible, with a general reason",
+              "9": "shows how the choice changes what the audience feels at that moment"
+            }
+          },
+          {
+            "name": "The Critic",
+            "character": "Precise and a little cold. Cares about craft and detail.",
+            "rubric": {
+              "2": "praise with nothing specific underneath it",
+              "5": "talks in generalities",
+              "9": "names particular moments, songs, or what the part demands of a singer"
+            }
+          },
+          {
+            "name": "The Superfan",
+            "character": "Has seen it eleven times. Cares whether this is a take worth arguing about.",
+            "rubric": {
+              "2": "no enthusiasm, or clearly does not know the show",
+              "5": "safe and predictable",
+              "9": "a bold choice defended with real knowledge of the show"
+            }
+          }
+        ]
+      },
+      "samples": [
+        {
+          "submission": "Defying Gravity is the best song because of how the key change lands exactly when she decides to stop apologising.",
+          "status": 200,
+          "response": {
+            "status": "scored",
+            "results": [
+              {
+                "judge": "The Director",
+                "character": "Thinks about the show as a whole. Cares whether the choice serves the story.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 9,
+                "reason": "Pinpointing that musical shift right at the moment of emotional liberation shows a profound understanding of narrative impact. That exact structural choice completely transforms how the audience shares in her triumph."
+              },
+              {
+                "judge": "The Critic",
+                "character": "Precise and a little cold. Cares about craft and detail.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 9,
+                "reason": "Pinpointing the harmonic shift in \"Defying Gravity\" to Elphaba's psychological turning point demonstrates a precise understanding of how musical structure serves narrative intent. It is a rare pleasure to read an evaluation that actually listens to the score rather than merely reacting to the volume."
+              },
+              {
+                "judge": "The Superfan",
+                "character": "Has seen it eleven times. Cares whether this is a take worth arguing about.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 9,
+                "reason": "Pinpointing that massive key change as the exact moment Elphaba stops apologizing shows you have actually sat in that theatre and felt the seismic shift eleven times over. It is a bold, rock-solid take that proves you truly understand the dramatic engine driving Wicked."
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": 9,
+              "why": "The average of all the scores."
+            }
+          }
+        },
+        {
+          "submission": "Hamilton is good.",
+          "status": 200,
+          "response": {
+            "status": "scored",
+            "results": [
+              {
+                "judge": "The Director",
+                "character": "Thinks about the show as a whole. Cares whether the choice serves the story.",
+                "refused": false,
+                "wantsMore": true,
+                "score": null,
+                "reason": "Darling, I need you to actually give me a specific casting choice, song, or staging moment to judge instead of just a general opinion."
+              },
+              {
+                "judge": "The Critic",
+                "character": "Precise and a little cold. Cares about craft and detail.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 2,
+                "reason": "This is nothing more than empty praise devoid of any analytical foundation or specific observation about the score or staging. One expects a modest degree of intellectual engagement before presuming to offer an opinion on craft."
+              },
+              {
+                "judge": "The Superfan",
+                "character": "Has seen it eleven times. Cares whether this is a take worth arguing about.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 2,
+                "reason": "Saying Hamilton is good is the absolute bare minimum, and eleven viewings of the show demand a much sharper take than that. You have to actually bring some real passion and deep knowledge of the staging or the score if you want to sit in my section."
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": 2,
+              "why": "The average of all the scores. 1 judge wanted more, so that judge is left out."
+            }
+          }
+        },
+        {
+          "submission": "Palmer should start ahead of Foden.",
+          "status": 200,
+          "response": {
+            "status": "refused",
+            "results": [
+              {
+                "judge": "The Director",
+                "character": "Thinks about the show as a whole. Cares whether the choice serves the story.",
+                "refused": true,
+                "wantsMore": false,
+                "score": null,
+                "reason": "As The Director, I only judge choices about casting, songs, or staging for a musical, and football team selections do not belong on my stage."
+              },
+              {
+                "judge": "The Critic",
+                "character": "Precise and a little cold. Cares about craft and detail.",
+                "refused": true,
+                "wantsMore": false,
+                "score": null,
+                "reason": "I deal strictly in theatrical craft, not football selections."
+              },
+              {
+                "judge": "The Superfan",
+                "character": "Has seen it eleven times. Cares whether this is a take worth arguing about.",
+                "refused": true,
+                "wantsMore": false,
+                "score": null,
+                "reason": "Look, as much as I love a good debate about who’s starting on the pitch, this is about football, not the Great White Way, so I can't score it!"
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": null,
+              "why": "As The Director, I only judge choices about casting, songs, or staging for a musical, and football team selections do not belong on my stage."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "inventions",
+      "config": {
+        "topic": "Inventions",
+        "title": "Invention Judges",
+        "intro": "Dreamed up something that should exist? Type it in. Three judges score it out of ten, tell you why, and then the panel gives its verdict.",
+        "submission": "an invention they have made up: what it is, what it does, and who it is for",
+        "shape": "made up",
+        "placeholder": "A backpack that weighs itself and...",
+        "tip": "Say what it does and who it is for. The judges want to picture it.",
+        "verdict": "average",
+        "judges": [
+          {
+            "name": "The Engineer",
+            "character": "Practical and unexcitable. Cares whether the thing could actually be built.",
+            "rubric": {
+              "2": "needs something that does not exist",
+              "5": "plausible but vague about how it works",
+              "9": "realistic, and names the parts it would need"
+            }
+          },
+          {
+            "name": "The Investor",
+            "character": "Impatient. Cares whether anybody actually needs this.",
+            "rubric": {
+              "2": "solves nothing anyone was worried about",
+              "5": "useful to somebody, but unclear who",
+              "9": "names a real problem and the people who have it"
+            }
+          },
+          {
+            "name": "The Ten Year Old",
+            "character": "Honest to a fault. Cares whether it is cool.",
+            "rubric": {
+              "2": "bored before the end of the sentence",
+              "5": "shrugs, says it is fine",
+              "9": "wants one immediately"
+            }
+          }
+        ]
+      },
+      "samples": [
+        {
+          "submission": "A backpack that weighs itself and warns you before it hurts your back, for school kids carrying too many books.",
+          "status": 200,
+          "response": {
+            "status": "scored",
+            "results": [
+              {
+                "judge": "The Engineer",
+                "character": "Practical and unexcitable. Cares whether the thing could actually be built.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 6,
+                "reason": "The load sensors and warning system are standard off-the-shelf components that any decent tech integrator could assemble into a standard frame. However, it lacks specifics on power management and how it determines individual spinal injury thresholds, leaving the mechanics a bit vague."
+              },
+              {
+                "judge": "The Investor",
+                "character": "Impatient. Cares whether anybody actually needs this.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 9,
+                "reason": "This addresses a genuine, widespread health problem among school kids who constantly lug around way too many heavy textbooks. Every parent and orthopedist would line up to buy this the moment it hits shelves."
+              },
+              {
+                "judge": "The Ten Year Old",
+                "character": "Honest to a fault. Cares whether it is cool.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 8,
+                "reason": "That is actually super smart because my back hurts every single day from way too many heavy textbooks. I want one right now so I don't turn into a hunchback before middle school."
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": 7.7,
+              "why": "The average of all the scores."
+            }
+          }
+        },
+        {
+          "submission": "A machine that reads your mind so you never have to type.",
+          "status": 200,
+          "response": {
+            "status": "scored",
+            "results": [
+              {
+                "judge": "The Engineer",
+                "character": "Practical and unexcitable. Cares whether the thing could actually be built.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 2,
+                "reason": "We currently lack the non-invasive neural interface technology required to accurately translate raw thought into text at standard typing speeds. Until signal-to-noise ratios in brain-computer interfaces improve drastically, this simply cannot be built."
+              },
+              {
+                "judge": "The Investor",
+                "character": "Impatient. Cares whether anybody actually needs this.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 9,
+                "reason": "People waste countless hours typing on tiny screens and keyboards every single day, so eliminating that bottleneck is a massive real-world problem for anyone who works or communicates. This targets essentially every digital device user on the planet who is sick of friction in their workflow."
+              },
+              {
+                "judge": "The Ten Year Old",
+                "character": "Honest to a fault. Cares whether it is cool.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 9,
+                "reason": "That is seriously so epic because typing takes forever and playing video games with just your brain would be the ultimate flex. I want one immediately so I can do all my homework in zero seconds flat."
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": 6.7,
+              "why": "The average of all the scores."
+            }
+          }
+        },
+        {
+          "submission": "An umbrella.",
+          "status": 200,
+          "response": {
+            "status": "scored",
+            "results": [
+              {
+                "judge": "The Engineer",
+                "character": "Practical and unexcitable. Cares whether the thing could actually be built.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 5,
+                "reason": "An umbrella is an existing product rather than a novel invention, but it is certainly plausible. However, it lacks any specific details on how it is constructed or what materials are used."
+              },
+              {
+                "judge": "The Investor",
+                "character": "Impatient. Cares whether anybody actually needs this.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 2,
+                "reason": "An umbrella is an ancient invention, not a new idea I can invest in today. It solves getting wet, but nobody is waiting for a venture capitalist to reinvent rain gear."
+              },
+              {
+                "judge": "The Ten Year Old",
+                "character": "Honest to a fault. Cares whether it is cool.",
+                "refused": false,
+                "wantsMore": false,
+                "score": 1,
+                "reason": "An umbrella already exists in the real world, so you totally failed the rules by not making up a new invention. That is super boring and definitely not cool at all."
+              }
+            ],
+            "verdict": {
+              "method": "average",
+              "score": 2.7,
+              "why": "The average of all the scores."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
